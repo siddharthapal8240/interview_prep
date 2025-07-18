@@ -492,7 +492,7 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions })=>
     const handleCall = async ()=>{
         setCallStatus("CONNECTING");
         if (type === "generate") {
-            await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$vapi$2e$sdk$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["vapi"].start(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_VAPI_WORKFLOW_ID, {
+            await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$vapi$2e$sdk$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["vapi"].start(undefined, undefined, undefined, ("TURBOPACK compile-time value", "8db8b5e1-6105-47e5-b6e2-455457037c61"), {
                 variableValues: {
                     username: userName,
                     userid: userId
@@ -506,7 +506,9 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions })=>
             await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$vapi$2e$sdk$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["vapi"].start(__TURBOPACK__imported__module__$5b$project$5d2f$constants$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["interviewer"], {
                 variableValues: {
                     questions: formattedQuestions
-                }
+                },
+                clientMessages: [],
+                serverMessages: []
             });
         }
     };
@@ -533,33 +535,33 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions })=>
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Agent.tsx",
-                                        lineNumber: 154,
+                                        lineNumber: 162,
                                         columnNumber: 13
                                     }, this),
                                     isSpeaking && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "animate-speak"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Agent.tsx",
-                                        lineNumber: 161,
+                                        lineNumber: 169,
                                         columnNumber: 28
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Agent.tsx",
-                                lineNumber: 153,
+                                lineNumber: 161,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 children: "AI Interviewer"
                             }, void 0, false, {
                                 fileName: "[project]/components/Agent.tsx",
-                                lineNumber: 163,
+                                lineNumber: 171,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Agent.tsx",
-                        lineNumber: 152,
+                        lineNumber: 160,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -575,31 +577,31 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions })=>
                                     className: "rounded-full object-cover size-[120px]"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Agent.tsx",
-                                    lineNumber: 169,
+                                    lineNumber: 177,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     children: userName
                                 }, void 0, false, {
                                     fileName: "[project]/components/Agent.tsx",
-                                    lineNumber: 176,
+                                    lineNumber: 184,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Agent.tsx",
-                            lineNumber: 168,
+                            lineNumber: 176,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Agent.tsx",
-                        lineNumber: 167,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Agent.tsx",
-                lineNumber: 150,
+                lineNumber: 158,
                 columnNumber: 7
             }, this),
             messages.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -611,17 +613,17 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions })=>
                         children: lastMessage
                     }, lastMessage, false, {
                         fileName: "[project]/components/Agent.tsx",
-                        lineNumber: 184,
+                        lineNumber: 192,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Agent.tsx",
-                    lineNumber: 183,
+                    lineNumber: 191,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Agent.tsx",
-                lineNumber: 182,
+                lineNumber: 190,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -634,7 +636,7 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions })=>
                             className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("absolute animate-ping rounded-full opacity-75", callStatus !== "CONNECTING" && "hidden")
                         }, void 0, false, {
                             fileName: "[project]/components/Agent.tsx",
-                            lineNumber: 200,
+                            lineNumber: 208,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -642,13 +644,13 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions })=>
                             children: callStatus === "INACTIVE" || callStatus === "FINISHED" ? "Call" : ". . ."
                         }, void 0, false, {
                             fileName: "[project]/components/Agent.tsx",
-                            lineNumber: 207,
+                            lineNumber: 215,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Agent.tsx",
-                    lineNumber: 199,
+                    lineNumber: 207,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     className: "btn-disconnect",
@@ -656,12 +658,12 @@ const Agent = ({ userName, userId, interviewId, feedbackId, type, questions })=>
                     children: "End"
                 }, void 0, false, {
                     fileName: "[project]/components/Agent.tsx",
-                    lineNumber: 214,
+                    lineNumber: 222,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Agent.tsx",
-                lineNumber: 197,
+                lineNumber: 205,
                 columnNumber: 7
             }, this)
         ]
